@@ -7,6 +7,18 @@
     <link rel="icon" type="image/png" href="skillam logo.png">
     <link rel="stylesheet" href="aviation.css">
     <link rel="stylesheet" href="style.css">
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (window.location.hash) {
+            let target = document.querySelector(window.location.hash);
+            if (target) {
+                setTimeout(() => {
+                    target.scrollIntoView({ behavior: "smooth" });
+                }, 500); // Page load hone ke 500ms baad scroll karega
+            }
+        }
+    });
+    </script>
 </head>
 <body>
     <!-- navbar -->
